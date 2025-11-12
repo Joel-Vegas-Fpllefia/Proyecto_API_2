@@ -18,7 +18,8 @@ def sql_call(numero_temporada):
             user="439220@joelvegasromero",
             passwd="Ju94714016*",
             database="joelvegasromero_laliga",
-            port=3306
+            port=3306,
+            ssl_disabled=True
         )
         with conn.cursor(dictionary=True) as cursor:
             cursor.execute("""
