@@ -2,6 +2,12 @@ from flask import Flask, jsonify, request
 import mysql.connector
 import json
 
+import os
+
+port = int(os.environ.get("PORT", 10000))
+
+app.run(host="0.0.0.0", port=port)
+
 # IMPORTANTE: En un entorno de producción, evita las conexiones de base de datos globales
 # y utiliza un pool de conexiones o crea y cierra la conexión por cada solicitud.
 # Para este ejemplo, mantendremos tu conexión global pero arreglaremos el uso del cursor.
