@@ -15,7 +15,7 @@ def sql_call(numero_temporada):
     try:
         conn = mysql.connector.connect(
             host="mysql-joelvegasromero.alwaysdata.net",
-            user="439220",
+            user="439220@joelvegasromero",
             passwd="Ju94714016*",
             database="joelvegasromero_laliga",
             port=3306
