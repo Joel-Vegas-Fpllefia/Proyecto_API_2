@@ -14,10 +14,11 @@ def root():
 def sql_call(numero_temporada):
     try:
         conn = mysql.connector.connect(
-            host="localhost",
-            user="root",
+            host="mysql-joelvegasromero.alwaysdata.net",
+            user="439220",
             passwd="Ju94714016*",
-            database="LaLiga"
+            database="joelvegasromero_laliga",
+            port=3306
         )
         with conn.cursor(dictionary=True) as cursor:
             cursor.execute("""
